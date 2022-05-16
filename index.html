@@ -4,26 +4,93 @@
 <head>
     <meta charset="utf-8" />
     <title>E Juneau - Home page</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script type="application/javascript" src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/30c5564c8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>E Juneau</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#"><p>About Me</p></a></li>
+                <li><a href="#"><p>Projects</p></a></li>
+                <li><a href="#"><p>Skills</p></a></li>
+                <li><a href="#"><p>Contact</p></a></li>
             </ul>
         </nav>
-        <div class="darkmode-button"></div>
+        <button onclick="darkMode()"><i class="fa-solid fa-sun" id="icon"></i></button>
     </header>
     <main>
     <div class="about-me-summary">
         <h2>About Me</h2>
-        <p>My name is E Juneau (they/them), and I am a 24 year old self-taught programmer. I have a Bachelor's degree in Pharmacology and a Graduate Diploma in Business Administration, but I recently discovered my passion for coding and wish to pursue a carrer in the tech domain. This website is my portfolio where you can learn a little more about my skills and contact me if you wish to know more. Welcome!</p>
-        <img src="profile.jpg" />
+        <div class="about-me-text">
+            <p>My name is E Juneau (they/them), and I am a 24 year old self-taught programmer. I have a Bachelor's degree in Pharmacology and a Graduate Diploma in Business Administration, but I recently discovered my passion for coding and wish to pursue a carrer in the tech domain. This website is my portfolio where you can learn a little more about my skills and contact me if you wish to know more. Welcome!</p>
+            <img src="profile.jpeg" alt="Photo of E" id='profile'/>
+        </div>
+    </div>
+    <div class="projects-summary">
+        <h2>Projects</h2>
+        <p>Here you can see a few of the projects that I have completed, or am close to completing. I update it as I apply the cool new things I learn!</p>
+        <div class="projects-container">
+            <div class="project">
+                <h3>The chickencloud</h3>
+                <p>A "homelab" server that I built from used Enterprise hardware. Runs Proxmox Virtual Environment and serves several different uses including but not limited to: Hosting a Plex Media Server, Pihole DNS Server, dedicated video game servers, and eventually my own mail server. A demo website is hosted on the server, which is also comically dedicated to my dog.</p>
+                <a href="https://thinkchicken.cc"><p>Learn more</p></a>
+            </div>
+            <div class="project">
+                <h3>Choose your own Adventure</h3>
+                <p>A small text-based adventure game designed to practise my coding skills. Uses Object-Oriented-Programming to keep track of variables like player hunger, time of day, and inventory. Written in C++. Currently not available due to being on a computer with hardware issues.
+            </p>
+                <a href="#"><p>Learn more</p></a>
+            </div>
+            <div class="project">
+                <h3>June.au</h3>
+                <p>A quick text-based game made for my brother. The player guesses the correct password with a less-than-helpful AI guiding them. Currently in proof-of-concept stage with very little sophisticated code going on. Written in C++.</p>
+                <a href="https://github.com/ejuneau/password-guessing-game"><p>Learn more</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="skills-summary">
+        <h2>Skills</h2>
+        <p>Here is a brief summary of the technical skills that I have gathered on my self-teaching journey. You can hover over each one to learn more.</p>
+        <div class="skills-container">
+            <div class="skill" id="skill-one">
+                <i class="fa-solid fa-code"></i>
+                <h3>Front-End Development</h3>
+                <div class="hover" id ="skill-one-hover">
+                    <p id="skill-one-text">Languages: </p><i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-js-square"></i> <i class="fa-brands fa-php"></i> 
+                </div>
+            </div>
+            <div class="skill" id="skill-two">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Back-End Development</h3>
+                    <div class="hover" id ="skill-two-hover">
+                    <p id="skill-two-text">Languages: </p><i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-js-square"></i> <i class="fa-brands fa-php"></i> 
+                </div>
+            </div>
+            <div class="skill" id="skill-three">
+                <i class="fa-solid fa-sitemap"></i>
+                <h3>Skill name</h3>
+                <div class="hover" id ="skill-three-hover">
+                    <p id="skill-three-text">Languages: </p><i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-js-square"></i> <i class="fa-brands fa-php"></i> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-summary">
+        <h2>Contact</h2>
+        <p>Liked what you saw? You can reach me here:</p>
     </div>
     </main>
+    <footer>
+        <p>Coded by E Juneau</p>
+        <p>Hosted by <a href="github.com">GitHub</a></p>
+        <p>Contact</p>
+        
+    </footer>
 </body>
 </html>

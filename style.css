@@ -1,0 +1,151 @@
+@charset "utf-8";
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+}
+a.dark-mode:hover {
+    text-shadow: 0 0.015em #FFF,0 -0.015em #FFF,0.01em 0 #FFF,-0.01em 0 #FFF;
+    text-shadow: 0 0.015em #FFF,0 -0.015em #FFF,0.01em 0 #FFF,-0.01em 0 #FFF;
+}
+
+button {
+  background-color: #53658D;
+  border: none;
+  color: white;
+  height: 5vh;
+  width: 5vh;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poly, serif;
+}
+header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    height: 16vh;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: white;
+    align-items: center;
+}
+header h1 {
+    margin-left: 3vw;
+}
+header nav {
+    margin-left: auto;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 0 0.5vw;;
+}
+a:hover{
+    text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+}
+header button {
+    margin-right: 3vw;
+    margin-left: 1vw;
+}
+main {
+    margin-top: 16vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+main .about-me-summary .about-me-text {
+    display: flex;
+}
+main .about-me-summary .about-me-text p{
+    width: 60%;
+}
+main .about-me-summary .about-me-text img {
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+img.dark-mode {
+    opacity: 0.7;
+}
+main .projects-summary .projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    overflow: auto;
+    margin: 0 1vw;
+}
+main .projects-summary .projects-container .project {
+    min-width: 40%;
+    max-width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
+
+main .projects-summary .projects-container .project h3 {
+    margin-left: 1vw;
+}
+main .projects-summary .projects-container .project a {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 1vw;
+    
+}
+main .skills-summary {
+    width: 100%;
+}
+main .skills-summary .skills-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+main .skills-summary .skills-container .skill {
+    height: 20vh;
+    margin: 0 2vw;
+    z-index: 1;
+}
+#skill-one i, #skill-one h3 {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.skill i {
+    font-size: 150%;
+}
+.hover i {
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#skill-two i, #skill-two h3 {
+    display: inline-block;
+    margin: 0 5px;
+}
+#skill-three i, #skill-three h3 {
+    display: inline-block;
+}
+.hover {
+    position: absolute;
+}
