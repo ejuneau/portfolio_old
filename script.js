@@ -1,20 +1,21 @@
 // JavaScript Document
   function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    document.getElementsByTagName('header')[0].classList.toggle('dark-mode');
-    let links = document.getElementsByTagName('a');
-      for (let i in links) {
-          links[i].classList.toggle('dark-mode');
-      }
-    const icon = document.getElementById('icon');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
-    let photo = document.getElementById('profile');
-    photo.classList.toggle('dark-mode');
-      
-  }
+      document.body.classList.toggle("dark-mode");
+      document.getElementsByTagName('header')[0].classList.toggle('dark-mode');
 
+      const icon = document.querySelector('#icon');
+      icon.classList.toggle("fa-sun");
+      icon.classList.toggle("fa-moon");
+      
+      const photos = document.getElementsByTagName("img");
+      for (let j in photos) {
+          photos[j].classList.toggle('dark-mode');
+      }
+      const anchors = document.getElementsByTagName("a");
+      for (let i in anchors) {
+          anchors[i].classList.toggle('dark-mode');
+      }
+  }
 document.getElementById('skill-one-hover').hidden = true;
 document.getElementById('skill-two-hover').hidden = true;
 document.getElementById('skill-three-hover').hidden = true;
