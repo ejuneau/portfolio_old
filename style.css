@@ -88,7 +88,7 @@ main {
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 65%;
 }
 main .about-me-summary .about-me-text {
     display: flex;
@@ -101,6 +101,8 @@ main .about-me-summary .about-me-text img {
     max-height: 30vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 50%;
 }
 img.dark-mode {
@@ -114,12 +116,12 @@ main .projects-summary .projects-container {
     margin: 0 1vw;
 }
 main .projects-summary .projects-container .project {
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 70%;
+    max-width: 70%;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 5vw;
+    margin: 0 1vw;
 }
 
 main .projects-summary .projects-container .project h3 {
@@ -174,6 +176,9 @@ p.language {
     position: absolute;
 }
 
+.contact-summary {
+    margin-top: 20%;
+}
 
 .contact-summary i {
     font-size: 300%;
