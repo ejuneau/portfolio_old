@@ -15,36 +15,36 @@
         <h1>E Juneau</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <button onclick="darkMode()"><i class="fa-solid fa-sun" id="icon"></i></button>
     </header>
     <main>
-    <div class="about-me-summary">
+    <div class="about-me-summary" id="about-me">
         <h2>About Me</h2>
         <div class="about-me-text">
             <p>My name is E Juneau (they/them), and I am a 24 year old self-taught programmer. I have a Bachelor's degree in Pharmacology and a Graduate Diploma in Business Administration, but I recently discovered my passion for coding and wish to pursue a carrer in the tech domain. This website is my portfolio where you can learn a little more about my skills and contact me if you wish to know more. Welcome!</p>
             <img src="profile.jpeg" alt="Photo of E" id="profile"/>
         </div>
     </div>
-    <div class="projects-summary">
+    <div class="projects-summary" id="projects">
         <h2>Projects</h2>
         <p>Here you can see a few of the projects that I have completed, or am close to completing. I update it as I apply the cool new things I learn!</p>
         <div class="projects-container">
             <div class="project">
                 <h3>The chickencloud</h3>
-                <p>A "homelab" server that I built from used Enterprise hardware. Runs Proxmox Virtual Environment and serves several different uses including but not limited to: Hosting a Plex Media Server, Pihole DNS Server, dedicated video game servers, and eventually my own mail server. A demo website is hosted on the server, which is also comically dedicated to my dog.</p>
+                <p>A "homelab" server that I built from used enterprise hardware. Runs Proxmox Virtual Environment and serves several different uses including but not limited to: Hosting a Plex Media Server, Pihole DNS Server, dedicated video game servers, and eventually my own mail server. A demo website is hosted on the server, which is also comically dedicated to my dog.</p>
                 <a href="https://thinkchicken.cc"><p>Learn more</p></a>
             </div>
             <div class="project">
-                <h3>Choose your own Adventure</h3>
-                <p>A small text-based adventure game designed to practise my coding skills. Uses Object-Oriented-Programming to keep track of variables like player hunger, time of day, and inventory. Written in C++. Currently not available due to being on a computer with hardware issues.
+                <h3>Codecademy Portfolio projects</h3>
+                <p>As part of my courses on <a href="codecademy.com">Codecademy</a>, I have completed several small projects to test my knowledge of the topics I'm learning. These skills include using libraries like Phaser.js, connecting to external APIs, or a simple weather unit converter. The full list is available on my profile.
             </p>
-                <a href="#"><p>Learn more</p></a>
+                <a href="https://www.codecademy.com/users/ejuneau/achievements"><p>Learn more</p></a>
             </div>
             <div class="project">
                 <h3>June.au</h3>
@@ -53,9 +53,9 @@
             </div>
         </div>
     </div>
-    <div class="skills-summary">
+    <div class="skills-summary" id="skills">
         <h2>Skills</h2>
-        <p>Here is a brief summary of the technical skills that I have gathered on my self-teaching journey. You can hover over each one to learn more.</p>
+        <p>Here is a brief summary of the skills that I have gathered. You can hover over each one to learn more.</p>
         <div class="skills-container">
             <div class="skill" id="skill-one">
                 <i class="fa-solid fa-code"></i>
@@ -72,20 +72,20 @@
                 </div>
             </div>
             <div class="skill" id="skill-three">
-                <i class="fa-solid fa-sitemap"></i>
-                <h3>Frameworks</h3>
+                <i class="fa-solid fa-wine-glass"></i>
+                <h3>Other experience</h3>
                     <div class="hover" id ="skill-three-hover">
-                    <p id="skill-three-text">Languages: Need to add stuff here lol</p>
+                    <p id="skill-three-text">6 years of restaurant experience including positions of line cook, waiter, and bar manager. This experience has taught me how to operate in high-pressure environments, interacting with clients, as well as leading and working with a team.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contact-summary">
+    <div class="contact-summary" id="contact">
         <h2>Contact</h2>
-        <p>Liked what you saw? You can reach at the following links:</p>
+        <p>Liked what you saw? You can reach me at the following links:</p>
         <a href="https://github.com/ejuneau"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/e-juneau-44033023a/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:rcjuneau8@.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:rcjuneau8@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
     </main>
     <footer>
